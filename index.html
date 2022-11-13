@@ -1,55 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./sass/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Profile Card by Azula</title>
+  
+  <title>Card component by Azula</title>
+
+  
+
 </head>
-
 <body>
-  <div class="container-card">
-    <div class="img-blue">
-      <img src="./images/bg-pattern-card.svg" alt="">
+
+  <section class="container-card">
+    <picture class="container-card__image">
+        <img class="container-card__image-perfume" src="./images/image-product-mobile.jpg" alt="img perfume">
+    </picture>
+
+      <div class="container-info">
+        <div class="container-info__product-type">Perfume</div>
+
+        <div class="container-info__nameProduct">
+          <span>Gabrielle Essence Eau De Parfum</span>
+        </div>
+
+        <div class="container-info__description">
+          <span>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</span>
+        </div>
+
+
+      <div class="container-info__prices">
+        <div class="container-info__priceNow">
+          <span>$149.99</span>
+
+          <div class="container-info__priceBefore">
+            <span>$169.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-card__button">
+        <button class="button"> <img class="img-cart" src="./images/icon-cart.svg" alt=""> <span class="text-button">Add to Cart</span> </button>
+      </div>
+
+      </div>
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer-container__attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Azula Dev</a>.
     </div>
-
-    <div class="photo">
-      <img src="./images/azula.jpg" alt="">
-    </div>
-
-    <div class="datos-personales">
-      <span class="datos-personales__name">Azula</span>
-      <span class="datos-personales__age">28</span>
-      <div class="datos-personales__city">Nacion del Fuego</div>
-    </div>
-
-    <div class="container-stats">
-      <div class="stats">
-      <div class="numbers"> 80k</div>
-      <div class="stats__names">Followers</div>
-    </div>
-
-    <div class="stats">
-      <div class="numbers"> 803k</div>
-      <div class="stats__names">Likes</div>
-    </div>
-
-    <div class="stats">
-      <div class="numbers"> 1.4k</div>
-      <div class="stats__names">Photos</div>
-    </div>
-
-    </div>
-
-  </div>
+  </footer>
 
 
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
-    Coded by <a href="#"> Azula Dev </a>.
-  </div>
+  
+  
 </body>
 </html>
