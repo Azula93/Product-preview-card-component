@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; // HACE QUE EL CONTENIDO CREZCA HASTA DONDE YO LO DLEIMITE, Y NO QUE CREZCA O SE DEBORDE POR LA CANTIDAD DE CONTENIDO
+    box-sizing: border-box; 
     
 }
 
